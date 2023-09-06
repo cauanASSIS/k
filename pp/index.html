@@ -21,20 +21,21 @@
     
     <header>
         <div class="interface">
+            <section>
             <div class="logo">
                 <a href="#">
-                    <img src="1693393097329.png.url" alt="">
+                    <img src="0.png" alt="#">
                 </a>
             </div><!--logo-->
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
+                    <li><a href="">Home</a></li>
                     <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
+                    <li><a href="sobre">Sobre</a></li>
                     <li><a href="#">Projetos</a></li>
                 </ul>
-            </nav>
+                <section>
 
             <div class="btn-contato">
                 <a href="#">
@@ -53,7 +54,7 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#">Início</a></li>
+                        <li><a href="">Início</a></li>
                         <li><a href="#">Especialidades</a></li>
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Projetos</a></li>
@@ -89,7 +90,7 @@
             </div><!--interface-->
         </section><!--topo-do-site-->
 
-        <section class="especiliadades">
+        <section class="especialidades">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
                 <div class="flex">
@@ -123,7 +124,7 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quidem quae iusto repellendus eaque, ipsum sed voluptate explicabo voluptas, dolorum porro sequi laudantium? Obcaecati quae, dolores illo officiis a numquam.</p>
                         <div class="btn-social">
                             <a href="https://github.com/cauanASSIS"><button><i class="bi bi-github"></i></button></a>
-                            <a href="#"><button><i class="bi bi-envelope-fill"></i></button></a>
+                            <a href="mailto:aguiar.cauan05@gmail.com"><button><i class="bi bi-envelope-fill"></i></button></a>
                             <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BymPIHjyDTI2WAVNq2WQlYg%3D%3D"><button><i class="bi bi-linkedin"></i></button></a>
                         </div><!--btn-social-->
                     </div><!--txt-sobre-->
@@ -150,15 +151,20 @@
 
 <section class="formulario">
 <div class="interface">
-    <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+    <h2 class="titulo">CONVERSE <span>COMIGO.</span></h2>
 
-    <form action="">
-        <input type="text" name="" id="" placeholder="Francisco Cauan A. Aguiar" required>
-        <input type="text" name="" id="" placeholder="aguiar.cauan05@gmail.com" required>
-        <input type="text" name="" id="" placeholder="Seu celular:">
-        <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
-        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-    </form>
+    <form action="https://api.staticforms.xyz/submit" method="post">
+        <label>Nome</label>
+        <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+        <label>Mensagem</label>
+        <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+
+        <input type="hidden" name="accessKey" value="6974246e-9f0b-4f65-a83d-347a92b6b564">
+        <input type="hidden" name="redirectTo" value="file:///C:/Users/FRANCISCOCAUANDEASSI/Desktop/pp/index.html#sobre">
+    </form> 
 </div><!--interface-->
 </section><!--formulario-->
 
@@ -175,7 +181,7 @@
                     </div><!--logo-footer-->
                     <div class="btn-social">
                         <a href="https://github.com/cauanASSIS"><button><i class="bi bi-github"></i></button></a>
-                        <a href="#"><button><i class="bi bi-envelope-fill"></i></button></a>
+                        <a href="mailto:aguiar.cauan05@gmail.com"><button><i class="bi bi-envelope-fill"></i></button></a>
                         <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BymPIHjyDTI2WAVNq2WQlYg%3D%3D"><button><i class="bi bi-linkedin"></i></button></a>
                     </div><!--btn-social-->
                 </div>

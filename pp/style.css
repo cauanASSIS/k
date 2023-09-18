@@ -66,7 +66,6 @@ html {
 }
 
 
-
 header {
     padding: 40px 4%;
 }
@@ -86,7 +85,7 @@ header a {
 
 header nav.menu-desktop {
     position: fixed;
-
+    background-color: #000;
 }
 
 header nav.menu-desktop a:hover {
@@ -102,7 +101,6 @@ header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 40px;
 }
-
 
 /* ESTILO DO MENU MOBILE */
 
@@ -204,7 +202,6 @@ section.topo-do-site .flex {
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-
 @keyframes flutuar {
     0% {
         top: 0;
@@ -214,8 +211,6 @@ section.topo-do-site .flex {
         top: 30px;
     }
 }
-
-
 /* ESTILO DAS ESPECIALIDADES */
 section.especialidades {
     padding: 40px 4%;
@@ -337,7 +332,6 @@ section.portfolio .flex {
 .overlay:hover {
     opacity: 1;
 }
-
 /* ESTILO DO FORMULÁRIO DE CONTATO */
 section.formulario {
     padding: 80px 4%;
@@ -394,6 +388,7 @@ footer {
 
 footer .flex {
     justify-content: space-between;
+    align-items: center;
 }
 
 footer .line-footer {
@@ -414,6 +409,14 @@ footer .line-footer p a {
 }
 
 @media screen and (max-width: 1020px) {
+ 
+.btn-abrir-menu{
+  display: none;
+}
+
+.btn-abrir-menu{
+  display: block;
+}
 
     /* CLASSES GERAIS */
     .flex {
@@ -435,6 +438,10 @@ footer .line-footer p a {
         display: none;
     }
 
+    .btn-contato {
+        display: flex;
+    }
+
     /* TOPO DO SITE */
 
     section.topo-do-site .flex {
@@ -452,8 +459,7 @@ footer .line-footer p a {
     .topo-do-site .img-topo-site img {
         width: 100%;
     }
-
-    /* ESPECIALIDADES */
+  /* ESPECIALIDADES */
     section.especialidades {
         padding: 40px 8%;
     }
@@ -533,4 +539,4 @@ footer .line-footer p a {
  }
  .btn:hover{
      border-radius: 16px;
- }
+ }  

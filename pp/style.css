@@ -296,6 +296,7 @@ section.portfolio .flex {
     margin-top: 60px;
 }
 
+
 .img-port {
     width: 360px;
     height: 460px;
@@ -305,7 +306,9 @@ section.portfolio .flex {
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+
 }
+    
 
 .img-port:hover {
     background-position: 100% 100%;
@@ -328,6 +331,8 @@ section.portfolio .flex {
     opacity: 0;
     transition: .5s;
 }
+
+
 
 .overlay:hover {
     opacity: 1;
